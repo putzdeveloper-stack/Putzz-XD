@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe APK</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== LOADING SCREEN (BARU) ========== -->
+<div id="loading-screen">
+    <div class="loader"></div>
+    <p>Loading...</p>
+</div>
+
+<!-- ========== MENU SCREEN ========== -->
+<div id="menu-screen" style="display:none;">
+    <h1>TIC TAC TOE</h1>
+    <button class="menu-btn" data-mode="1player">1 Player vs AI</button>
+    <button class="menu-btn" data-mode="2player">2 Player</button>
+    <button class="menu-btn" id="startBtn">Mulai Permainan</button>
+</div>
+
+<!-- ========== GAME SCREEN ========== -->
+<div class="container" style="display:none;">
+    <h1 id="title">Tic Tac Toe</h1>
+
+    <div id="difficulty" style="margin-bottom:15px; display:none;">
+        <button class="btn dif" data-dif="easy">Easy</button>
+        <button class="btn dif" data-dif="medium">Medium</button>
+        <button class="btn dif" data-dif="hard">Hard</button>
+    </div>
+
+    <div id="turnInfo">Giliran: X</div>
+
+    <div class="board" id="board"></div>
+
+    <div id="scoreBox">
+        Player X: <span id="scoreX">0</span> | 
+        Player O: <span id="scoreO">0</span> | 
+        Seri: <span id="scoreT">0</span>
+    </div>
+
+    <button class="btn" id="btnReset">Reset Permainan</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
